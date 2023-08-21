@@ -1,3 +1,4 @@
+#Pyydetään nimi
 nimi = input("Anna nimesi:")
-
-print(f"Terve {nimi}!")
+#Tervehditään käyttäjää
+print(f"Terve, {nimi}!")
