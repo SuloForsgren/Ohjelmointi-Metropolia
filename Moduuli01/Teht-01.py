@@ -1,4 +1,10 @@
 #Pyydetään nimi
-nimi = input("Anna nimesi:")
+
+#Input kentän kanssa
+#nimi = input("Anna nimesi: ")
+
+#Ilman input kenttää
+nimi = "Sulo Forsgren"
+
 #Tervehditään käyttäjää
-print(f"Terve, {nimi}!")
+print(f"Hei, {nimi}!")
