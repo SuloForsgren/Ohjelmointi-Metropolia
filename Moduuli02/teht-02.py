@@ -8,4 +8,4 @@ ysade = int(ysade)
 tulos = 3.14 * (ysade * ysade)
 
 #Tulostetaan
-print(f"Tulos: {tulos}")
+print(f"Pinta-ala: {tulos}")
