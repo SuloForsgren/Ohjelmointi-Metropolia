@@ -1,0 +1,8 @@
+lista = []
+
+for i in range(0,5) :
+    kaupunki = str(input("Anna kaupungin nimi: "))
+    lista.append(kaupunki)
+
+for nimi in lista :
+    print(nimi)

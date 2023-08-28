@@ -1,8 +1,8 @@
 import random
 
-luku = random.randint(0,10)
-luku2 = random.randint(0,10)
-luku3 = random.randint(0,10)
+luku = random.randint(0,9)
+luku2 = random.randint(0,9)
+luku3 = random.randint(0,9)
 
 print(luku,luku2,luku3)
 
