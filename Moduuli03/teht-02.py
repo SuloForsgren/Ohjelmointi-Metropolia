@@ -4,7 +4,6 @@
 #C on ikkunaton hytti autokannen alapuolella.
 
 luokka = input("Anna hyttiluokka: ")
-luokka = luokka.upper()
 
 if luokka == "LUX" : 
     print("LUX on parvekkeellinen hytti yläkannella.")

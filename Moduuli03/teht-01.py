@@ -7,5 +7,3 @@ if pituus < 37 :
     else :
         print(f"Laske Kuha takaisin!\nKuhasi on alimittainen {alle} senttiä!")
 
-else :
-    print(f"{pituus} senttiä")

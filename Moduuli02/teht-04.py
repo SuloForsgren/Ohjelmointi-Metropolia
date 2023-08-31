@@ -1,12 +1,8 @@
 #Määritellään muuttujat
-luku1 = input("Luku1: ")
-luku2 = input("Luku2: ")
-luku3 = input("Luku3: ")
+luku1 = int(input("Luku1: "))
+luku2 = int(input("Luku2: "))
+luku3 = int(input("Luku3: "))
 
-#Muutetaan string muodosta integer muotoon
-luku1 = int(luku1)
-luku2 = int(luku2)
-luku3 = int(luku3)
 
 #Luodaan muuttujat eri vastauksille ja suoritetaan laskutoimitukset
 summa = luku1 + luku2 + luku3

@@ -1,8 +1,5 @@
-kanta = input("Anna suorakulmion kanta: ")
-korkeus = input("Anna suorakulmion korkeus: ")
-
-kanta = int(kanta)
-korkeus = int(korkeus)
+kanta = float(input("Anna suorakulmion kanta: "))
+korkeus = float(input("Anna suorakulmion korkeus: "))
 
 piiri = (kanta * 2) + (korkeus * 2)
 print(f"Suorakulmion piiri: {piiri}")
