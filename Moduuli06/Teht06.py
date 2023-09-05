@@ -1,21 +1,29 @@
-#Kirjoita funktio, joka saa parametreinaan pyöreän pizzan halkaisijan senttimetreinä
-#sekä pizzan hinnan euroina. Funktio laskee ja palauttaa pizzan 
-#yksikköhinnan euroina per neliömetri. Pääohjelma kysyy käyttäjältä kahden pizzan 
-#halkaisijat ja hinnat sekä ilmoittaa, kumpi pizza antaa paremman vastineen rahalle 
-#(eli kummalla on alhaisempi yksikköhinta). Yksikköhintojen laskennassa on hyödynnettävä kirjoitettua funktiota.
 import math
 
-def pizza(ekahalk, ekahint) :
+def pizza1(ekahalk, ekahint) :
 
-    cm2 = math.pi * ((ekahalk / 2) ** 2)
-    laskettu = ekahint / cm2
+    cm2 = math.pi / 4 * ekahalk ** 2
+    laskettu = ekahint / (cm2 / 10000)
+    return laskettu
+
+def pizza2(tokahalkaisija, tokahint) :
+
+    cm2 = math.pi / 4 * tokahalkaisija ** 2
+    laskettu = tokahint / (cm2 / 10000)
     return laskettu
 
 
 p1halkaisija = float(input("Anna pizzan halkaisija: "))
 p1hinta = float(input("Pizzan hinta euroina: "))
-#p2halkaisija = float(input("Anna pizzan halkaisija: "))
-#p2hinta = float(input("Pizzan hinta euroina: "))
+p2halkaisija = float(input("Anna pizzan halkaisija: "))
+p2hinta = float(input("Pizzan hinta euroina: "))
 
-palautus = pizza(p1halkaisija, p1hinta)
+palautus = pizza1(p1halkaisija, p1hinta)
+palautus2 = pizza2(p2halkaisija, p2hinta)
+
+if palautus < palautus2 :
+    print("Ensimmäinen pizza on halvempi!")
+else:
+    print("Toinen pizza on halvempi!")
+
 print(palautus)

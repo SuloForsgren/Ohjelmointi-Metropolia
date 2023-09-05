@@ -1,5 +1,7 @@
-komento = int(input("Luku: "))
+virhe = False
+luku = int(input("Anna luku: "))
 
-while komento > 0 :
-    print("K")
-
+for i in range(2, luku) :
+    if luku % i == 0 :
+        print("Luku ei ole alkuluku")
+        break

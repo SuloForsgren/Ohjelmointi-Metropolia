@@ -14,5 +14,6 @@ def luvut(lista) :
     return muokattava
 
 kokonaisluvut = [2, 3, 4, 15, 5, 7, 13, 213]
-palautus = luvut(kokonaisluvut) 
-print(palautus)
+print(kokonaisluvut)
+print (luvut(kokonaisluvut))
+
