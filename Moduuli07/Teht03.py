@@ -1,22 +1,23 @@
-def hae() :
-    return "Haetaan!"
 
-def tallenna(sanakirja) :
-    icao = int(input("Anna ICAO koodi: "))
-    lnimi = (input("Anna lentokentälle nimi: "))
-    sanakirja = {icao:lnimi}
+def lisaa_Lentokentta(Lentokentät) :
+    lkNimi = input("Anna lentokentän nimi: ")
+    icao = input("Anna lentokentän ICAO koodi: ")
+    Lentokentät[lkNimi] = icao
+    return Lentokentät
 
-    return sanakirja
+def hae_Lentokentta() :
+    return "Haettu"
 
-sanakirja = {}
-while True:
-    valikko = int(input("Syöte numeroarvoinen! Haluatko hakea(1), tallentaa(2) vai lopettaa(3)?: "))
-    if valikko == 1 :
-        print(hae(sanakirja))
+Lentokentät = {}
 
-    elif valikko == 2 :
-        print(tallenna(sanakirja))
+syote = int(input("1, Syöttääksesi, 2 hakeaksesi ja 3 lopettaaksesi: "))
 
-    else :
-        print(sanakirja)
-        break
+while syote != 3 :
+    
+    if syote == 1 :
+        print(lisaa_Lentokentta(Lentokentät))
+    elif syote == 2 :
+        print(hae_Lentokentta())
+    syote = int(input("1, Syöttääksesi, 2 hakeaksesi ja 3 lopettaaksesi: "))
+
+print("Lopetettiin, Heippa!")

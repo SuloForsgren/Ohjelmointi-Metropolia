@@ -14,12 +14,13 @@ def tarkistus(lista) :
 
 
 
-nimilista = set
-while True :
+nimilista = set()
+arvo = True
+while arvo :
     nimi = input("Anna nimi: ")
     if nimi != "" :
-        print(f"{nimet(nimi, nimilista)}")
+        print(nimet(nimi, nimilista))
     else : 
-        break
+        arvo = False
 
 tarkistus(nimilista)
