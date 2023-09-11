@@ -1,5 +1,7 @@
 def vuodenaika(vuodenajat, kuukausi) :
-    if kuukausi == 12 or kuukausi <= 2 :
+    if kuukausi == 0 :
+        return "Virheellinen kuukausi"
+    elif kuukausi == 12 or kuukausi <= 2 :
         return vuodenajat[0]
     elif kuukausi <= 5 :
         return vuodenajat[1]
