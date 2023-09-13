@@ -1,12 +1,11 @@
 def nimet (syote, nimilista) :
     
-    print(nimilista)
-    for j in nimilista :
-        if j in nimilista :
-           return "Aiemmin syötetty nimi"
-        else :
-           nimilista.add(syote)
-           return "Uusi nimi"
+    #print(nimilista)
+    if syote in nimilista :
+        return "Aiemmin syötetty nimi"
+    else :
+        nimilista.add(syote)
+        return "Uusi nimi"
 
 def tarkistus(lista) :
      for i in lista:
