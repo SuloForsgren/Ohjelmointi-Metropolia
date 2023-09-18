@@ -10,7 +10,7 @@ yhteys = mysql.connector.connect(
          )
 
 def hae_maakoodilla_lentoasemat(maaKoodi):
-    sqlQuery = f"SELECT airport.type, count(airport.name) FROm airport WHERE iso_country = 'FI' GROUP BY airport.type;"
+    sqlQuery = f"SELECT airport.type, count(airport.name) FROm airport WHERE iso_country = '{maaKoodi}' GROUP BY airport.type;"
     kursori = yhteys.cursor()
     kursori.execute(sqlQuery)
     tulos = kursori.fetchall()
@@ -22,4 +22,3 @@ maaKoodi = input("Syötä maakoodi: ")
 palautus = hae_maakoodilla_lentoasemat(maaKoodi)
 for i in palautus :
     print(i[0], i[1])
-#print(f"ICAO-Koodilla {ICAO_koodi} löytyy lentokenttä {palautus[0][0]} ja sijainti on {palautus[0][1]}")
