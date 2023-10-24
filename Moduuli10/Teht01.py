@@ -23,20 +23,27 @@ class Hissi:
         if (tavoite - kerros) > 0:
             for i in range(tavoite - siirtymä) :
                 siirtymä = Hissi.kerros_ylös(siirtymä)
+                if siirtymä > self.ylin :
+                    siirtymä = self.ylin
+                    break
                 print(siirtymä)
-        
+            
+
         elif (tavoite - kerros) < 0:
             for i in range(siirtymä - tavoite) :
                 siirtymä = Hissi.kerros_alas(siirtymä)
+                if siirtymä < self.alin :
+                    siirtymä = self.alin
+                    break
                 print(siirtymä)
-        
+            
         self.kerros = siirtymä
         print("-------")
         
 
 
-h = Hissi(1,50)
+h = Hissi(1,15)
 h.siirry_kerrokseen(7)
 h.siirry_kerrokseen(4)
-h.siirry_kerrokseen(33)
-h.siirry_kerrokseen(2)
+h.siirry_kerrokseen(32)
+h.siirry_kerrokseen(-8)
