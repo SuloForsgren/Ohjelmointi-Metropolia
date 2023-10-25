@@ -19,16 +19,16 @@ class Hissi:
         kerros = self.kerros
 
 
-        print(kerros)
+        #print(kerros)
         if (tavoite - kerros) > 0:
             for i in range(tavoite - kerros) :
                 kerros = Hissi.kerros_ylös(kerros)
-                print(kerros)
+                #print(kerros)
         
         elif (tavoite - kerros) < 0:
             for i in range(kerros - tavoite) :
                 kerros = Hissi.kerros_alas(kerros)
-                print(kerros)
+                #print(kerros)
 
 
         self.kerros = kerros
@@ -63,4 +63,5 @@ talo.aja_hissiä(1,4)  #Hissi 2
 print(f"Hissi 1: kerros {talo.hissilista[0].tavoite} \nHissi 2: kerros {talo.hissilista[1].tavoite} \nHissi 3: kerros {talo.hissilista[2].tavoite}")
 
 talo.palohälytys()
+print("Palohälytys")
 print(f"Hissi 1: kerros {talo.hissilista[0].tavoite} \nHissi 2: kerros {talo.hissilista[1].tavoite} \nHissi 3: kerros {talo.hissilista[2].tavoite}")
