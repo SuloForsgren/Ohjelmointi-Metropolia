@@ -25,11 +25,11 @@ auto = Auto("ABC-123", 142)
 auto.kiihdytä(30)
 auto.kiihdytä(70)
 auto.kiihdytä(50)
-print(auto.nopeus)
+print(f"{auto.nopeus} km/h")
 
 auto.kulje(1.5)
 auto.kulje(3)
 print(f"{auto.matka} metriä")
 
 auto.kiihdytä(-200)
-print(auto.nopeus)
+print(f"{auto.nopeus} km/h")
