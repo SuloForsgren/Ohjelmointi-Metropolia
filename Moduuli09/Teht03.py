@@ -29,18 +29,7 @@ print(auto.nopeus)
 
 auto.kulje(1.5)
 auto.kulje(3)
-print(auto.matka)
+print(f"{auto.matka} metriä")
 
 auto.kiihdytä(-200)
 print(auto.nopeus)
-
-
-
-
-print(
-f"""
-Rekkari: {auto.rekisteritunnus}
-Huippunopeus: {auto.huippunopeus}km/h
-Tämänhetkinen nopeus: {auto.nopeus}
-Auton kulkema matka: {auto.matka}
-""")
