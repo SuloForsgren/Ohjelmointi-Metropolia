@@ -20,7 +20,7 @@ class Auto:
 
 auto = Auto("ABC-123", 142)
 auto.kiihdytä(30)
-auto.kiihdytä(25)
+auto.kiihdytä(70)
 auto.kiihdytä(50)
 print(auto.nopeus)
 
