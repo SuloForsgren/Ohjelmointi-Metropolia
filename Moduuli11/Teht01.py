@@ -10,7 +10,7 @@ class Kirja(Julkaisu):
         super().__init__(nimi)
 
     def tulosta_tiedot(self):
-        print(f"{Kirja.kirjoittaja}, {Kirja.sivut}")
+        print(f"Kirjan nimi --> {self.nimi}. Kirjan kirjoittaja --> {self.kirjoittaja}. Kirjan sivumäärä --> {self.sivut}")
 
 class Lehti(Julkaisu):
     def __init__(self, nimi, paatoimittaja):
@@ -18,7 +18,10 @@ class Lehti(Julkaisu):
         super().__init__(nimi)
 
     def tulosta_tiedot(self):
-        print(f"{self.kirjoittaja}, {self.sivut}")
+        print(f"Lehden nimi --> {self.nimi}. Kirjan päätoimittaja --> {self.paatoimittaja}")
 
-lehti = Lehti("Aku Ankka", "Aki Hyyppä")
 kirja = Kirja("Hytti n:o 6", "Rosa Liksom", 200)
+lehti = Lehti("Aku Ankka", "Aki Hyyppä")
+
+kirja.tulosta_tiedot()
+lehti.tulosta_tiedot()
