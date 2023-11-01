@@ -7,8 +7,6 @@ class Hissi:
     def kerros_ylös(kerros):
         kerros += 1
         return kerros
-        
-
 
     def kerros_alas(kerros):
         kerros -= 1
@@ -17,7 +15,6 @@ class Hissi:
     def siirry_kerrokseen(self, tavoite):
         self.tavoite = tavoite
         kerros = self.kerros
-
 
         print(kerros)
         if (tavoite - kerros) > 0:
@@ -29,7 +26,6 @@ class Hissi:
             for i in range(kerros - tavoite) :
                 kerros = Hissi.kerros_alas(kerros)
                 print(kerros)
-
 
         self.kerros = kerros
         print("-------")

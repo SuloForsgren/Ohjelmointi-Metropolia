@@ -8,8 +8,6 @@ class Hissi:
         kerros += 1
         return kerros
         
-
-
     def kerros_alas(kerros):
         kerros -= 1
         return kerros
@@ -50,11 +48,6 @@ class Talo:
         for i in self.hissilista :
             i.siirry_kerrokseen(self.alin)
 
-#h = Hissi(1,15)
-#h.siirry_kerrokseen(7)
-#h.siirry_kerrokseen(4)
-#h.siirry_kerrokseen(15)
-#h.siirry_kerrokseen(2)
 
 talo = Talo(1,24,3)
 talo.aja_hissiä(0,22) #Hissi 1
