@@ -1,0 +1,79 @@
+*{
+    font-family:'Nosifer';
+}
+
+#body_color{
+    background-color:bisque;
+}
+.container{
+
+    margin: 50px 300px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFF8FD;
+    height: 80px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar li a {
+    color: black;
+    font-size: 25px; 
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: #FF81D0;
+}
+
+#logocontainer {
+    padding: 15px 30px;
+    text-align: left;
+    font-size: 30px;
+}
+
+#evelynnjpg{
+    display: block;
+    width: 1000px; 
+    height: 450px;
+    padding-left: 125px;
+}
+
+#otsikko{
+    text-align: center;
+    font-size: 50px;
+    margin: 0;
+    padding-top: 100px;
+}
+
+#imgcontainer{
+    background-image: url("WaveLine.svg");
+    padding: 0;
+    margin-top: 0px;
+}
+
+#lorem {
+    padding: 200px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+
+#currentsite {
+    background-color: pink;
+}

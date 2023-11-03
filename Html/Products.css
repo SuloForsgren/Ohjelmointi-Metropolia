@@ -1,0 +1,127 @@
+*{
+    font-family:'Nosifer';
+}
+
+#body_color{
+    background-color:bisque;
+}
+.container{
+
+    margin: 50px 300px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFF8FD;
+    height: 80px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar li a {
+    color: black;
+    font-size: 25px; 
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: #FF81D0;
+}
+
+#logocontainer {
+    padding: 15px 30px;
+    text-align: left;
+    font-size: 30px;
+}
+
+#evelynnjpg{
+    display: block;
+    width: 1000px; 
+    height: 450px;
+    padding-left: 125px;
+}
+
+#otsikko{
+    text-align: center;
+    font-size: 50px;
+    margin: 0;
+    padding-top: 100px;
+}
+
+#imgcontainer{
+    background-image: url("Snow.svg");
+    padding: 0;
+    margin-top: 0px;
+}
+
+#lorem {
+    padding: 200px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+
+#currentsite {
+    background-color: pink;
+}
+
+.flex-container {
+    display: flex;
+    padding-left: 105px;
+}
+  
+.flex-container > div {
+    background-color: #f1f1f1;
+    margin: 20px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.flex-container h4 {
+    text-align: center;
+}
+
+#sub {
+    font-size: 12px;
+    color: gray;
+}
+
+#ipsum {
+    font-size: 14px;
+}
+
+#flex1 {
+    width: 267px;
+    height: 500px;
+    background-color: #5CA7F5;
+}
+
+#flex2 {
+    width: 267px;
+    height: 500px;
+    background-color: #5CA7F5;
+}
+
+#flex3 {
+    width: 267px;
+    height: 500px;
+    background-color: #5CA7F5;
+}
+
+#flex1img {
+    width: 267px;
+    height: 300;
+}
